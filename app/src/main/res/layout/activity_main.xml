@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Kabir Singh Playlist"
+        android:textColor="#F60303"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="22dp"
+        android:background="@android:drawable/ic_media_play"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="22dp"
+        android:background="@android:drawable/ic_media_pause"
+        app:backgroundTint="#000000" />
+
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginLeft="134dp"
+        android:layout_marginBottom="22dp"
+        android:background="@android:drawable/ic_media_previous"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="191dp"
+        android:layout_marginLeft="191dp"
+        android:layout_marginBottom="22dp"
+        android:background="@android:drawable/ic_media_next"
+        app:backgroundTint="#000000" />
+
+    <SeekBar
+        android:id="@+id/seekBarVolume"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="22dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarMusic"
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="75dp" />
+
+    <ListView
+        android:id="@+id/Songs"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_above="@+id/seekBarMusic"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
